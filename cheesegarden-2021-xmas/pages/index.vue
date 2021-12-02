@@ -1,7 +1,7 @@
 <template>
   <div id="body">
       <section class="header-mooc">
-      <img src="/2021-garagara-web-banner-1200x600px-02.jpg" class="img-fluid" alt="Cheese Garden">
+      <img src="/2021-garagara-web-banner-1200x600px-02.jpg" class="img-fluid" alt="Cheese Garden 2021 Christmas">
       <img src="/second-banner.jpg" class="img-fluid banner-desk" alt="Cheese Garden">
       <img src="/second-banner-m.jpg" class="img-fluid banner-mobile" alt="Cheese Garden">
         <img src="/third-banner.jpg" class="img-fluid banner-desk" alt="Cheese Garden">
