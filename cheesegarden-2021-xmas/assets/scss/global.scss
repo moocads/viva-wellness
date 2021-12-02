@@ -19,10 +19,6 @@ $blue: #73bee6;
   margin: auto;
 }
 
-img {
-  max-width: 100%;
-}
-
 a {
   color: inherit;
 }
@@ -113,42 +109,7 @@ p, li {
   }
 }
 
-// @media (max-width: 767px) {
-//   .main {
-//     // background-size: contain;
-//     // background-repeat: repeat-y;
-
-//     .maps {
-//       .pickup, .delivery {
-//         max-width: 400px;
-//         margin-left: auto;
-//         margin-right: auto;
-//       }
-//     }
-
-//     .menu {
-//       margin-top: 60px;
-//       margin-bottom: 20px;
-  
-//       .txtContainer {
-//         transform: translateX(-10px);
-//       }
-  
-//       .graphic {
-//         img {
-//           width: 28px;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media (max-width: 500px) {
-//   .internalWrapper {
-//     width: 90vw;
-//   }
-
-//   .wrapper {
-//     width: 90vw;
-//   }
-// }
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
