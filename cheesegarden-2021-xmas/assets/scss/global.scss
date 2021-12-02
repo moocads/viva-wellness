@@ -1,0 +1,154 @@
+$yellow: hsl(45, 100%, 71%);
+$brown: #9d3d21;
+$pink: 	#ffa5b9;
+$orange:	#fa8c73;
+$green: #c8d26e;
+$blue: #73bee6;
+
+.wrapper {
+  width: 1100px;
+  // width: 85vw;
+  height: auto;
+  margin: auto;
+}
+
+.internalWrapper {
+  width: 700px;
+  // width: 85vw;
+  height: auto;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+p, li {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  color: rgb(110, 110, 110);
+  font-size: 13px;
+}
+
+.en, .jp {
+  filter: drop-shadow(0px 0px 1px white);
+}
+
+.header {
+  filter: drop-shadow(0px 0px 2px white);
+}
+
+.en {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.jp {
+  font-family: 'New Tegomin', serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.main {
+  background-image: url('/bg/bg.png');
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .disclaimer {
+    text-align: center;
+  }
+
+  .menu {
+    margin-top: 90px;
+    margin-bottom: 50px;
+
+    .imgContainer {
+      max-width: 300px;
+    }
+
+    .txtContainer {
+      display: flex;
+
+      .graphic {
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+.maps {
+  .header {
+    text-transform: uppercase;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .pickup, .delivery {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .imgContainer {
+    max-width: 400px;
+  }
+}
+
+// @media (max-width: 767px) {
+//   .main {
+//     // background-size: contain;
+//     // background-repeat: repeat-y;
+
+//     .maps {
+//       .pickup, .delivery {
+//         max-width: 400px;
+//         margin-left: auto;
+//         margin-right: auto;
+//       }
+//     }
+
+//     .menu {
+//       margin-top: 60px;
+//       margin-bottom: 20px;
+  
+//       .txtContainer {
+//         transform: translateX(-10px);
+//       }
+  
+//       .graphic {
+//         img {
+//           width: 28px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 500px) {
+//   .internalWrapper {
+//     width: 90vw;
+//   }
+
+//   .wrapper {
+//     width: 90vw;
+//   }
+// }
