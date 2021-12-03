@@ -6,6 +6,10 @@
       <img src="/second-banner-m.jpg" class="img-fluid banner-mobile" alt="Cheese Garden">
         <img src="/third-banner.jpg" class="img-fluid banner-desk" alt="Cheese Garden">
       <img src="/third-banner-m.jpg" class="img-fluid banner-mobile" alt="Cheese Garden">
+      <div class="video">
+        <p>This year, the Gara Gara Pon game is not only valid for instore purchase, you can also place an order online ($30 or more before tax), then play the game when you pick up your order. </p>
+<iframe width="315" height="315" src="https://www.youtube.com/embed/ZLdVw2RdrKE?start=2" title="" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen style="border-radius:10px;" poster=""></iframe>
+</div>
     </section>
   </div>
 </template>
@@ -51,12 +55,42 @@ export default {
   display: none;
 }
 
+.video{
+  padding-top: 200px;
+  padding-bottom: 150px;
+  background-image: url('/video-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  p{
+    width: 500px;
+    font-size: 16px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    display: block;
+    color: #C8142D;
+    padding-bottom: 50px;
+  }
+}
+
 @media screen and (max-width:768px) {
   .banner-desk{
   display: none;
 }
 .banner-mobile{
   display: block;
+}
+
+.video{
+  background-size: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  p{
+    width: 300px;
+    font-size: 16px;
+  }
 }
 }
 </style>

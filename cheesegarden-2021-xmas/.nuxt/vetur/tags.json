@@ -1,9 +1,6 @@
 {
-  "FooterOrange": {
-    "description": "Auto imported from components/FooterOrange.vue"
-  },
-  "FooterPink": {
-    "description": "Auto imported from components/FooterPink.vue"
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
   },
   "Logo": {
     "description": "Auto imported from components/Logo.vue"

@@ -39,7 +39,7 @@
               </li>
               <li class="active">
                 <a href="https://sakuraspring.cheesegarden.ca/">
-                  2021 Sakura Spring
+                  2021 Christmas Event
                 </a>
               </li>
             </ul>
@@ -69,11 +69,6 @@
           <li>
             <a href="https://onlineorder.cheesegarden.ca/">
               Online Order
-            </a>
-          </li>
-          <li class="active">
-            <a href="https://sakuraspring.cheesegarden.ca/" >
-              2021 Sakura Spring
             </a>
           </li>
         </ul>
@@ -115,7 +110,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 
 #consolidatedHeader {
-  height: 83px;
+  height: auto;
   // overflow-x: hidden;
   transition: all 0.5s ease;
 
@@ -127,25 +122,11 @@ export default {
   }
 
   header {
-    // position: fixed;
-    // left: 0;
-    // top: 0;
     position: relative;
     width: 100%;
     z-index: 999;
     transition: all 0.5s ease;
     box-shadow: 0px 2px 5px -2px rgba(80, 80, 80, 0.5);
-
-    // &.navActive {
-    //   box-shadow: 0px 2px 5px -2px rgba(80, 80, 80, 0.5);
-    //   transition: all 0.7s ease;
-
-    //   .logo {
-    //     img {
-    //       max-height: 70px;
-    //     }
-    //   }
-    // }
   }
 }
 
@@ -169,6 +150,7 @@ header nav {
 
   .logo {
     width: 115px;
+    margin-right: 30px;
 
     img {
       width: 100%;
@@ -195,7 +177,7 @@ header nav {
       }
 
       &.active {
-        color: $pink;
+        color: #C8142D;
         font-weight: bold;
       }
     }
@@ -304,27 +286,30 @@ div.hamburger {
   }
 }
 
-// @media (max-width: 991px) {
-//   header #webNav {
-//     display: none;
-//   }
+@media screen and (max-width: 768px) {
+   header nav
+   {.navbar {
 
-//   .navToggle div.hamburger {
-//     display: block;
-//   }
 
-//   header #mobileNav {
-//     display: flex;
-//   }
-// }
+    li {
+      font-size: 6px;
+      margin-right: 10px;
+      }
+    }
+   }
 
-// @media (max-width: 1100px) {
-//   #consolidatedHeader {
-//     // width: 1100px;
+   header nav .logo{
+    width: 80px;
+     margin-right: 0px;
+}
+   header #webNav li {
+    margin-right: 10px;
+}
 
-//     .wrapper.navbarWrap {
-//       width: 1100px;
-//     }
-//   }
-// }
+   #consolidatedHeader .logo img {
+    width: 50px;
+    }
+}
+
+
 </style>
