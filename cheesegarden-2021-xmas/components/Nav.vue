@@ -39,7 +39,7 @@
               </li>
               <li class="active">
                 <a href="https://sakuraspring.cheesegarden.ca/">
-                  2021 Christmas Event
+                  Christmas Event
                 </a>
               </li>
             </ul>
