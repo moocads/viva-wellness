@@ -39,7 +39,7 @@
               </li>
               <li class="active">
                 <a href="https://sakuraspring.cheesegarden.ca/">
-                  Christmas Event
+                  Christmas Promo
                 </a>
               </li>
             </ul>
