@@ -9,7 +9,12 @@
       <div class="video">
         <p>This year, the Gara Gara Pon game is not only valid for instore purchase, you can also place an order online ($30 or more before tax), then play the game when you pick up your order. </p>
 <iframe width="315" height="315" src="https://www.youtube.com/embed/ZLdVw2RdrKE?start=2" title="" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen style="border-radius:10px;" poster=""></iframe>
+<br>
+<br>
+<br>
+  <a href="https://onlineorder.cheesegarden.ca/" target="_blank" ><img src="/order-button.png" style="width:250px;" class="img-fluid" alt=""></a>
 </div>
+  
     </section>
   </div>
 </template>
@@ -57,7 +62,7 @@ export default {
 
 .video{
   padding-top: 200px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   background-image: url('/video-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,7 +91,7 @@ export default {
 .video{
   background-size: 100%;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   p{
     width: 300px;
     font-size: 16px;

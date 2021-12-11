@@ -3,7 +3,6 @@
     "name": "index",
     "path": "/",
     "component": "/Users/mikema/Website Projects/cheesegarden-2021-xmas/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_526229b1"
+    "chunkName": "pages/index"
   }
 ]
