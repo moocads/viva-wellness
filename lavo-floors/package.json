@@ -1,5 +1,5 @@
 {
-  "name": "my-v0-project",
+  "name": "lavo-floors",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -7,10 +7,11 @@
     "npm": ">=10.0.0"
   },
   "scripts": {
+
+    "dev": "next dev --turbo",
+    "lint": "eslint src && tsc && prettier src --check",
     "build": "next build",
-    "dev": "next dev",
-    "lint": "eslint .",
-    "start": "next start -p $PORT"
+    "start": "next start"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
