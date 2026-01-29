@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Series A",
+    "bannerImage": "/products/LV128-190042-2-rendering.jpg",
+    "description": "Series A floors are soft, silent, and beautiful to walk on, yet ultra-strong and waterproof. With authentic textures, stylish design, and true-to-life detail – Series A makes your hard-wear areas look bright and welcoming.",
+    "featuresTitle": "WHY CHOOSE A SERIES A FLOOR?",
+    "features": [
+      {
+        "icon": "cloud.svg",
+        "title": "SOFT & SILENT",
+        "description": "Our Series A floors are soft and silent to walk, play or even dance on."
+      },
+      {
+        "icon": "water_drop.svg",
+        "color": "#000000",
+        "title": "WATERPROOF & EASY TO CLEAN",
+        "description": "Just wipe off water and stains and your floor is as good as new."
+      },
+      {
+        "icon": "check.svg",
+        "color": "#000000",
+        "title": "LIFETIME WARRANTY",
+        "description": "All Series A floors have a lifetime warranty, so that you can enjoy your floors without worry."
+      }
+    ]
+  },
+  {
+    "name": "Series B",
+    "bannerImage": "/products/LV121-190049-5-rendering.jpg",
+    "description": "Series B floors are soft, silent, and beautiful to walk on, yet ultra-strong and waterproof. With authentic textures, stylish design, and true-to-life detail – Series B makes your hard-wear areas look bright and welcoming.",
+    "featuresTitle": "WHY CHOOSE A SERIES B FLOOR?",
+    "features": [
+      {
+        "icon": "cloud.svg",
+        "title": "SOFT & SILENT",
+        "color": "#000000",
+        "description": "Our Series B floors are soft and silent to walk, play or even dance on."
+      },
+      {
+        "icon": "water_drop.svg",
+        "color": "#000000",
+        "title": "WATERPROOF & EASY TO CLEAN",
+        "description": "Just wipe off water and stains and your floor is as good as new."
+      },
+      {
+        "icon": "check.svg",
+        "color": "#000000",
+        "title": "LIFETIME WARRANTY",
+        "description": "All Series B floors have a lifetime warranty, so that you can enjoy your floors without worry."
+      }
+    ]
+  }
+]

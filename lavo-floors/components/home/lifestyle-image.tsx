@@ -54,7 +54,7 @@ export function LifestyleImage() {
           ref={imageRef}
           className={`relative w-full h-[300px] md:h-[500px] bg-cover bg-center bg-no-repeat animate-fade-in ${isVisible ? 'visible' : ''}`}
           style={{
-            backgroundImage: "url('images/lavo-floor-lifestyle-bg.jpg')",
+            backgroundImage: "url('/images/lavo-floor-lifestyle-bg.jpg')",
             transform: `translateY(${translateY}px) scale(${scale})`,
             transition: "transform 0.1s ease-out",
           }}

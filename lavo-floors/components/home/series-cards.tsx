@@ -11,7 +11,7 @@ const series = [
     description:
       "Timeless designs featuring natural oak tones and traditional patterns for elegant interiors.",
     image: "/images/collection-01.jpg",
-    href: "/products?collection=Falster",
+    href: "/products/series/series-a",
   },
   {
     title: "Series 2",
@@ -19,7 +19,7 @@ const series = [
     description:
       "Modern aesthetics with cool grey tones and minimalist finishes for contemporary spaces.",
     image: "/images/collection-02.jpg",
-    href: "/products?collection=Lofoten",
+    href: "/products/series/series-b",
   },
 ];
 
@@ -34,7 +34,7 @@ export function SeriesCards() {
             <Link
               key={item.title}
               href={item.href}
-              className="group relative h-[400px] md:h-[500px] overflow-hidden"
+              className="group relative h-[300px] md:h-[400px] overflow-hidden"
             >
               {/* Background Image */}
               <div

@@ -15,7 +15,7 @@ export function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('images/lavo-floor-home-hero-banner-01.jpg')",
+            "url('/images/lavo-floor-home-hero-banner-01.jpg')",
         }}
       >
         {/* Dark Overlay */}

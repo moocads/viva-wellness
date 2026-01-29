@@ -6,6 +6,8 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import type { Product } from "@/lib/products";
 import { QuoteModal } from "@/components/quote-modal";
+import { ProductImageSlider } from "@/components/products/product-image-slider";
+import { ProductCard } from "@/components/products/product-card";
 
 interface ProductDetailClientProps {
   product: Product;
@@ -26,20 +28,16 @@ export function ProductDetailClient({ product, relatedProducts }: ProductDetailC
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="pt-24 pb-8 px-4">
+      {/* Back Button */}
+      <section className="pt-24 pb-4 px-4">
         <div className="max-w-7xl mx-auto">
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-6"
+            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Products
           </Link>
-          <h1 className="text-3xl md:text-4xl font-bold tracking-wide">{product.name}</h1>
-          <p className="text-sm text-muted-foreground mt-2 uppercase tracking-wide">
-            {product.metaLine}
-          </p>
         </div>
       </section>
 
@@ -47,44 +45,51 @@ export function ProductDetailClient({ product, relatedProducts }: ProductDetailC
       <section className="pb-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Product Image */}
-            <div className="relative aspect-[4/3] bg-muted overflow-hidden">
-              <Image
-                src={product.image || "/placeholder.svg"}
-                alt={product.name}
-                fill
-                className="object-cover"
-                priority
+            {/* Left: Product Image Slider */}
+            <div>
+              <ProductImageSlider 
+                images={product.images || []} 
+                productName={product.name}
               />
             </div>
 
-            {/* Product Info */}
-            <div>
-              <h2 className="text-2xl font-semibold mb-4">{product.name}</h2>
-              <p className="text-muted-foreground leading-relaxed mb-8">{product.description}</p>
+            {/* Right: Product Info */}
+            <div className="flex flex-col">
+              {/* SKU Number - 14px */}
+              <p className="text-[14px] text-muted-foreground mb-4">
+                {product.sku}
+              </p>
 
-              {/* Specifications */}
-              <div className="border-t border-border pt-6 mb-8">
-                <h3 className="text-sm font-semibold uppercase tracking-wide mb-4">
-                  Specifications
-                </h3>
-                <dl className="space-y-3">
-                  {specs.map((spec) => (
-                    <div key={spec.label} className="flex justify-between text-sm">
-                      <dt className="text-muted-foreground">{spec.label}</dt>
-                      <dd className="font-medium">{spec.value}</dd>
-                    </div>
-                  ))}
-                </dl>
+              {/* Product Name - 32px */}
+              <h1 className="text-[32px] font-bold tracking-wide mb-6">
+                {product.name}
+              </h1>
+
+              {/* Product Parameters Table */}
+              <div className="mb-8">
+                <table className="w-full border-collapse">
+                  <tbody>
+                    {specs.map((spec) => (
+                      <tr key={spec.label} className="border-b border-border">
+                        <td className="py-3 text-sm text-muted-foreground">
+                          {spec.label}
+                        </td>
+                        <td className="py-3 text-sm font-medium text-right">
+                          {spec.value}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
 
-              {/* CTA Button */}
+              {/* Contact Sales Button */}
               <button
                 type="button"
                 onClick={() => setIsModalOpen(true)}
                 className="w-full sm:w-auto px-8 py-3 bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-primary/90 transition-colors"
               >
-                GET QUOTE
+                CONTACT SALES
               </button>
             </div>
           </div>
@@ -97,26 +102,7 @@ export function ProductDetailClient({ product, relatedProducts }: ProductDetailC
           <h2 className="text-2xl font-bold tracking-wide mb-8">Related Products</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {relatedProducts.map((relatedProduct) => (
-              <Link
-                key={relatedProduct.slug}
-                href={`/products/${relatedProduct.slug}`}
-                className="group bg-card"
-              >
-                <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-                  <Image
-                    src={relatedProduct.image || "/placeholder.svg"}
-                    alt={relatedProduct.name}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-4">
-                  <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">
-                    {relatedProduct.collection}
-                  </p>
-                  <h3 className="text-sm font-medium">{relatedProduct.name}</h3>
-                </div>
-              </Link>
+              <ProductCard key={relatedProduct.slug} product={relatedProduct} />
             ))}
           </div>
         </div>

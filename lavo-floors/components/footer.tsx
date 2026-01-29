@@ -21,9 +21,9 @@ export function Footer() {
           {/* Office */}
           <div>
             <h3 className="text-sm font-semibold tracking-wider uppercase mb-4">
-              Office
+              Toronto Office
             </h3>
-            <div className="space-y-3 text-sm text-gray-400">
+            <div className="space-y-1 text-sm text-gray-400">
               <p>+1 (555) 123-4567</p>
               <p>info@lavofloors.com</p>
               <p>
@@ -32,7 +32,21 @@ export function Footer() {
                 Copenhagen, Denmark
               </p>
             </div>
+            <br />
+             <h3 className="text-sm font-semibold tracking-wider uppercase mb-4">
+              Vancouver Office
+            </h3>
+            <div className="space-y-1 text-sm text-gray-400">
+              <p>+1 (555) 123-4567</p>
+              <p>info@lavofloors.com</p>
+              <p>
+                Unit #123 - 7080 River Road<br />Richmond, BC V7C 3T2
+              </p>
+            </div>
           </div>
+
+   
+          
 
           {/* Links */}
           <div>
@@ -120,7 +134,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-400">
-              2025 Lavo Floors. All rights reserved.
+              {new Date().getFullYear()} Lavo Floors. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm text-gray-400">
               <Link href="#" className="hover:text-white transition-colors">

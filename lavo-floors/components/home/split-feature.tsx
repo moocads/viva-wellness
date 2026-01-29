@@ -7,19 +7,19 @@ import { useAnimation } from "@/lib/use-animation";
 
 const contentData = [
   {
-    image: "images/lavo-floor-home-split-feature-01.jpg",
+    image: "/images/lavo-floor-home-split-feature-01.jpg",
     title: "Quality You Can See. Performance You Can Trust.",
     description:
       "Every Lavo floor is manufactured to the highest standards. Our multi-layer construction ensures dimensional stability, while the premium oak surface delivers the warmth and character of real wood. Backed by our 25-year warranty for complete peace of mind.",
   },
   {
-    image: "images/lavo-floor-home-split-feature-02.jpg",
+    image: "/images/lavo-floor-home-split-feature-02.jpg",
     title: "Technical design",
     description:
       "Lorem ipsum dolor sit amet consectetur. Erat tristique volutpat cursus non eu interdum. Id quisque faucibus ut dolor fermentum mattis amet.",
   },
   {
-    image: "images/lavo-floor-home-split-feature-03.jpg",
+    image: "/images/lavo-floor-home-split-feature-03.jpg",
     title: "Customer support",
     description:
       "Lorem ipsum dolor sit amet consectetur. Erat tristique volutpat cursus non eu interdum. Id quisque faucibus ut dolor fermentum mattis amet.",

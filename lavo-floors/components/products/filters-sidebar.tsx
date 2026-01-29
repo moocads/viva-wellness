@@ -16,6 +16,7 @@ interface FiltersSidebarProps {
     widths: string[];
   };
   toggleFilter: (category: keyof FiltersSidebarProps["selectedFilters"], value: string) => void;
+  hideCollections?: boolean;
 }
 
 interface FilterGroupProps {
@@ -73,6 +74,7 @@ export function FiltersSidebar({
   setSearchQuery,
   selectedFilters,
   toggleFilter,
+  hideCollections = false,
 }: FiltersSidebarProps) {
   return (
     <aside className="w-full lg:w-72 flex-shrink-0">
@@ -97,12 +99,14 @@ export function FiltersSidebar({
             selected={selectedFilters.colours}
             onToggle={(value) => toggleFilter("colours", value)}
           />
-          <FilterGroup
-            title="Collections"
-            options={filterOptions.collections}
-            selected={selectedFilters.collections}
-            onToggle={(value) => toggleFilter("collections", value)}
-          />
+          {!hideCollections && (
+            <FilterGroup
+              title="Collections"
+              options={filterOptions.collections}
+              selected={selectedFilters.collections}
+              onToggle={(value) => toggleFilter("collections", value)}
+            />
+          )}
           <FilterGroup
             title="Size"
             options={filterOptions.sizes}

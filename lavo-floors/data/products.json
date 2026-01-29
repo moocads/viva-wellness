@@ -1,0 +1,139 @@
+[
+  {
+    "slug": "light-pure-oak",
+    "name": "LIGHT PURE OAK",
+    "sku": "W1214-05125-3",
+    "metaLine": "PARQUET - FALSTER - W1214-05125-3",
+    "images": [
+      "/products/LV126-15008-S2.jpg",
+      "/products/LV126-15008-rendering.jpg"
+    ],
+    "colour": "Beige",
+    "collection": "Series A",
+    "size": "Long and wide plank",
+    "thickness": "13 mm",
+    "length": "2200 mm",
+    "width": "185 mm",
+    "description": "A timeless light oak floor with a pure, natural finish that brings warmth and elegance to any space."
+  },
+  {
+    "slug": "natural-harmony-oak",
+    "name": "NATURAL HARMONY OAK",
+    "sku": "W1214-05126-3",
+    "metaLine": "PARQUET - FALSTER - W1214-05126-3",
+    "images": [
+      "/products/LV121-190049-5.jpg",
+      "/products/LV121-190049-5-rendering.jpg"
+    ],
+    "colour": "Natural",
+    "collection": "Series A",
+    "size": "Long plank",
+    "thickness": "13 mm",
+    "length": "1820 mm",
+    "width": "185 mm",
+    "description": "Embrace the beauty of nature with this harmonious oak floor featuring subtle grain variations."
+  },
+  {
+    "slug": "lv122-15006-s5",
+    "name": "WARM BROWN OAK",
+    "sku": "lv122-15006-s5",
+    "metaLine": "PARQUET - LANGELAND - lv122-15006-s5",
+    "images": [
+      "/products/LV122-15006-S5.jpg",
+      "/products/LV122-15006-rendering.jpg"
+    ],
+    "colour": "Brown",
+    "collection": "Series A",
+    "size": "Long and wide plank",
+    "thickness": "13.5 mm",
+    "length": "2200 mm",
+    "width": "185 mm",
+    "description": "Rich warm brown tones create a cozy atmosphere perfect for traditional and modern interiors."
+  },
+  {
+    "slug": "dark-espresso-oak",
+    "name": "DARK ESPRESSO OAK",
+    "sku": "W1214-05128-3",
+    "metaLine": "PARQUET - LANGELAND - W1214-05128-3",
+    "images": [
+      "/products/LV123-15014-10.jpg",
+      "/products/LV123-15014-10-rendering.jpg"
+    ],
+    "colour": "Dark brown",
+    "collection": "Series A",
+    "size": "Long plank",
+    "thickness": "13.5 mm",
+    "length": "1820 mm",
+    "width": "185 mm",
+    "description": "Deep espresso tones add sophistication and drama to contemporary living spaces."
+  },
+  {
+    "slug": "soft-grey-oak",
+    "name": "SOFT GREY OAK",
+    "sku": "W1214-05129-3",
+    "metaLine": "PARQUET - LOFOTEN - W1214-05129-3",
+    "images": [
+      "/products/LV124-15008-111715008-17.jpg",
+      "/products/LV124-15008-1117-rendering.jpg"
+    ],
+    "colour": "Light Grey",
+    "collection": "Series A",
+    "size": "Pattern plank",
+    "thickness": "13 mm",
+    "length": "580 mm",
+    "width": "145 mm",
+    "description": "Contemporary grey tones bring a Scandinavian minimalist aesthetic to your home."
+  },
+  {
+    "slug": "pure-white-oak",
+    "name": "PURE WHITE OAK",
+    "sku": "W1214-05130-3",
+    "metaLine": "PARQUET - LOFOTEN - W1214-05130-3",
+    "images": [
+      "/products/LV125-SH012-6.jpg",
+      "/products/LV125-SH012-6-rendering.jpg"
+    ],
+    "colour": "White",
+    "collection": "Series A",
+    "size": "Long and wide plank",
+    "thickness": "13 mm",
+    "length": "2200 mm",
+    "width": "185 mm",
+    "description": "Bright and airy, this white oak floor creates an open, luminous feel in any room."
+  },
+  {
+    "slug": "classic-beige-oak",
+    "name": "CLASSIC BEIGE OAK",
+    "sku": "W1214-05131-3",
+    "metaLine": "PARQUET - SALTHOLM - W1214-05131-3",
+    "images": [
+      "/products/LV126-15008-S2.jpg",
+      "/products/LV127-190042-5-rendering.jpg"
+    ],
+    "colour": "Beige",
+    "collection": "Series B",
+    "size": "Long plank",
+    "thickness": "13.5 mm",
+    "length": "1820 mm",
+    "width": "185 mm",
+    "description": "Timeless beige oak with elegant grain patterns for sophisticated interiors."
+  },
+  {
+    "slug": "rustic-brown-oak",
+    "name": "RUSTIC BROWN OAK",
+    "sku": "W1214-05132-3",
+    "metaLine": "PARQUET - SALTHOLM - W1214-05132-3",
+    "images": [
+      "/products/LV128-190042-2.jpg",
+      "/products/LV128-190042-2-rendering.jpg"
+
+    ],
+    "colour": "Brown",
+    "collection": "Series B",
+    "size": "Pattern plank",
+    "thickness": "13 mm",
+    "length": "580 mm",
+    "width": "145 mm",
+    "description": "Authentic rustic character with rich brown tones and natural knots."
+  }
+]

@@ -34,7 +34,7 @@ export function BestSelling() {
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                 <Image
-                  src={product.image || "/placeholder.svg"}
+                  src={product.images?.[0] || "/placeholder.svg"}
                   alt={product.name}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"

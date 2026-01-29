@@ -18,7 +18,11 @@ interface SelectedFilters {
   widths: string[];
 }
 
-export function ProductsClient() {
+interface ProductsClientProps {
+  series?: string;
+}
+
+export function ProductsClient({ series }: ProductsClientProps) {
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState("");
   const [showInteriorPictures, setShowInteriorPictures] = useState(false);
@@ -75,6 +79,11 @@ export function ProductsClient() {
   const filteredProducts = useMemo(() => {
     let filtered = [...products];
 
+    // Series filter - if series prop is provided, filter by that series
+    if (series) {
+      filtered = filtered.filter((p) => p.collection === series);
+    }
+
     // Search filter
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
@@ -114,7 +123,7 @@ export function ProductsClient() {
     }
 
     return filtered;
-  }, [searchQuery, selectedFilters, sortBy]);
+  }, [series, searchQuery, selectedFilters, sortBy]);
 
   const activeFilterCount = Object.values(selectedFilters).flat().length;
   const allActiveFilters = Object.entries(selectedFilters).flatMap(([category, values]) =>
@@ -129,6 +138,7 @@ export function ProductsClient() {
         setSearchQuery={setSearchQuery}
         selectedFilters={selectedFilters}
         toggleFilter={toggleFilter}
+        hideCollections={!!series}
       />
 
       {/* Main Content */}
