@@ -8,21 +8,21 @@
     "deploy": "strapi deploy",
     "develop": "strapi develop",
     "start": "strapi start",
-    "strapi": "strapi",
-    "heroku-postbuild": "npm run build"
+    "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.10.4",
-    "@strapi/plugin-users-permissions": "5.10.4",
+    "@strapi/plugin-cloud": "5.40.0",
+    "@strapi/plugin-users-permissions": "5.40.0",
     "@strapi/provider-email-sendgrid": "^5.10.4",
     "@strapi/provider-upload-aws-s3": "^5.10.4",
-    "@strapi/strapi": "5.10.4",
+    "@strapi/strapi": "5.40.0",
     "better-sqlite3": "11.3.0",
     "pg": "^8.13.3",
     "pg-connection-string": "^2.7.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "strapi-plugin-sortable-entries": "^1.2.1",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {

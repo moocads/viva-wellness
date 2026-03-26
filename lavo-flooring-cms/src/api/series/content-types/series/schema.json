@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "series_list",
+  "info": {
+    "singularName": "series",
+    "pluralName": "series-list",
+    "displayName": "series",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seriesName": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "collection": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::collection.collection",
+      "inversedBy": "series"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "series"
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "sortOrder": {
+      "type": "integer"
+    }
+  }
+}

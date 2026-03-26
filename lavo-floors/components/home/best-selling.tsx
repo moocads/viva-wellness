@@ -3,12 +3,40 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import { products } from "@/lib/products";
 import { useAnimation } from "@/lib/use-animation";
+import { useEffect, useState } from "react";
+
+type BestSellingItem = {
+  href: string;
+  imageUrl: string;
+  seriesName: string;
+  productName: string;
+  id: string;
+};
 
 export function BestSelling() {
-  const bestSellers = products.slice(0, 4);
+  const [bestSellers, setBestSellers] = useState<BestSellingItem[]>([]);
   const { ref, isVisible } = useAnimation({ threshold: 0.2 });
+
+  useEffect(() => {
+    let cancelled = false;
+    async function load() {
+      try {
+        const res = await fetch("/api/best-selling", {
+          method: "GET",
+        });
+        if (!res.ok) return;
+        const json = (await res.json()) as { items: BestSellingItem[] };
+        if (!cancelled) setBestSellers(json.items || []);
+      } catch {
+        // ignore
+      }
+    }
+    load();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   return (
     <section ref={ref} className="py-20 bg-secondary/30">
@@ -26,25 +54,25 @@ export function BestSelling() {
 
         {/* Product Grid */}
         <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 animate-stagger-left ${isVisible ? 'visible' : ''}`}>
-          {bestSellers.map((product, index) => (
+          {bestSellers.map((product) => (
             <Link
-              key={product.slug}
-              href={`/products/${product.slug}`}
+              key={product.id}
+              href={product.href}
               className="group bg-card"
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                 <Image
-                  src={product.images?.[0] || "/placeholder.svg"}
-                  alt={product.name}
+                  src={product.imageUrl || "/placeholder.svg"}
+                  alt={product.productName}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
                 <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">
-                  {product.collection}
+                  Series - {product.seriesName}
                 </p>
-                <h3 className="text-sm font-medium">{product.name}</h3>
+                <h3 className="text-sm font-medium">{product.productName}</h3>
               </div>
             </Link>
           ))}

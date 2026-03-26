@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Axcellent Communication - CMS Control",
-  description: "CMS Control Dashboard for Axcellent Communication.",
+  title: "Lavo Floor — CMS",
+  description: "Lavo Floor tenant content: collections, series, products, and media uploads.",
 };
 
 export default function RootLayout({

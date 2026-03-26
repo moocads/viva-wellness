@@ -6,13 +6,18 @@ import { SeriesCards } from "@/components/home/series-cards";
 import { SplitFeature } from "@/components/home/split-feature";
 import { LifestyleImage } from "@/components/home/lifestyle-image";
 import { BestSelling } from "@/components/home/best-selling";
+import { getCollections } from "@/lib/api/collections";
 
-export default function Home() {
+export default async function Home() {
+  const collections = await getCollections();
+  const firstSlug = collections[0]?.slug;
+  const collectionHref = firstSlug ? `/products/${firstSlug}` : "/products";
+
   return (
     <>
       <Navbar />
       <main>
-        <Hero />
+        <Hero collectionHref={collectionHref} />
         <IntroSection />
         <SeriesCards />
         <SplitFeature />

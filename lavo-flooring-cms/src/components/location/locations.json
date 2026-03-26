@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_location_locations",
+  "info": {
+    "displayName": "Locations",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "City": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "google_map_link": {
+      "type": "string"
+    }
+  }
+}

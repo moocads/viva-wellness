@@ -16,7 +16,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
   return (
     <Link
-      href={`/products/${product.slug}`}
+      href={product.detailPath ?? `/products/product/${product.slug}`}
       className="group block bg-card"
     >
       <div 

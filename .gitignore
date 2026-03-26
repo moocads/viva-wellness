@@ -88,3 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Nested Git repo (Heroku deploys from lavo-flooring-cms only)
+lavo-flooring-cms/.git/

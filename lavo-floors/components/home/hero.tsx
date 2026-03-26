@@ -4,7 +4,12 @@ import { useState } from "react";
 import Link from "next/link";
 import { useAnimation } from "@/lib/use-animation";
 
-export function Hero() {
+type HeroProps = {
+  /** 第一个 Collection 详情页，例如 /products/water-resistant-laminate */
+  collectionHref?: string;
+};
+
+export function Hero({ collectionHref = "/products" }: HeroProps) {
   const [activeSlide, setActiveSlide] = useState(0);
   const { ref, isVisible } = useAnimation({ threshold: 0.2 });
 
@@ -31,7 +36,7 @@ export function Hero() {
           LAVO FLOORS. BUILT FOR LIVING.
         </h1>
         <Link
-          href="/products"
+          href={collectionHref}
           className={`px-8 py-3 bg-white text-foreground text-sm font-medium tracking-wide hover:bg-white/90 transition-colors animate-fade-up ${isVisible ? 'visible' : ''}`}
           style={{ transitionDelay: '0.2s' }}
         >

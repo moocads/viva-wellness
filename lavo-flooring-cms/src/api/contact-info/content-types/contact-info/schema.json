@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_infos",
+  "info": {
+    "singularName": "contact-info",
+    "pluralName": "contact-infos",
+    "displayName": "contact_info",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "locations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "location.locations"
+    }
+  }
+}

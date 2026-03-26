@@ -1,9 +1,24 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface LocationLocations extends Struct.ComponentSchema {
+  collectionName: 'components_location_locations';
+  info: {
+    description: '';
+    displayName: 'Locations';
+  };
+  attributes: {
+    address: Schema.Attribute.String;
+    City: Schema.Attribute.String;
+    email: Schema.Attribute.Email;
+    google_map_link: Schema.Attribute.String;
+    phone: Schema.Attribute.String;
+  };
+}
+
 export interface ProductProductSpec extends Struct.ComponentSchema {
   collectionName: 'components_product_product_specs';
   info: {
-    displayName: 'productSpec';
+    displayName: 'ProductSpec';
     icon: 'bulletList';
   };
   attributes: {
@@ -15,6 +30,7 @@ export interface ProductProductSpec extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'location.locations': LocationLocations;
       'product.product-spec': ProductProductSpec;
     }
   }

@@ -2,7 +2,12 @@ import productsData from "@/data/products.json";
 import seriesData from "@/data/series.json";
 
 export interface Product {
+  /** 本地 JSON：详情路径 `/products/product/[slug]`；Strapi：产品 URL 最后一段（kebab） */
   slug: string;
+  /** Strapi 产品完整详情路径，如 /products/water-resistant-laminate/12h/lv121-aston */
+  detailPath?: string;
+  /** 返回同系列列表 */
+  seriesBackPath?: string;
   name: string;
   sku: string;
   metaLine: string;

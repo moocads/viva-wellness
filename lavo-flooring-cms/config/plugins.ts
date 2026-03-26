@@ -28,4 +28,7 @@ export default ({ env }) => ({
           },
         },
       },
+        'sortable-entries': {
+    enabled: true,
+  },
   });

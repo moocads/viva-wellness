@@ -127,7 +127,10 @@ export function ProductsClient({ series }: ProductsClientProps) {
 
   const activeFilterCount = Object.values(selectedFilters).flat().length;
   const allActiveFilters = Object.entries(selectedFilters).flatMap(([category, values]) =>
-    values.map((value) => ({ category: category as FilterCategory, value }))
+    (values as string[]).map((value: string) => ({
+      category: category as FilterCategory,
+      value,
+    }))
   );
 
   return (

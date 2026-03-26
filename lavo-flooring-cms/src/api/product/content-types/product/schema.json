@@ -25,17 +25,6 @@
         "audios"
       ]
     },
-    "product_category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::product-category.product-category",
-      "inversedBy": "product"
-    },
-    "specs": {
-      "type": "component",
-      "repeatable": true,
-      "component": "product.product-spec"
-    },
     "rendering_image": {
       "type": "media",
       "multiple": false,
@@ -47,12 +36,34 @@
         "audios"
       ]
     },
-    "location": {
+    "avaliable_location": {
       "type": "enumeration",
       "enum": [
-        "BC,",
+        "BC",
         "ON"
       ]
+    },
+    "Documents": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "specs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.product-spec"
+    },
+    "series": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::series.series",
+      "inversedBy": "products"
     }
   }
 }
